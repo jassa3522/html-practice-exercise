@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jashan's Biography</title>
+    <style>
+        h1 {
+            font-size: 36px;
+            color: red;
+        }
+
+        table {
+            border-collapse: collapse;
+            color: black;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid black; 
+        }
+
+        p {
+            margin-top: 12px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .img {
+            float: left;
+            margin-right: 20px;
+            width: 200px;
+            height: 300px;
+            border-radius: 10%;
+        }
+
+        .content {
+            margin-top: 40px;
+            overflow: hidden; 
+        }
+
+        #displayedImage {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+
+        
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        select {
+            margin-top: 5px;
+            width: 200px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="img">
+        <img src="jashan.jpg" alt="ME" class="img">
+    </div>
+
+    <div class="content">
+        <h1>Welcome to My Biography Page!</h1>
+
+        <p>Hello there! I am jashandeep singh, I'm thrilled to share a bit about myself with you. seven months ago, I moved to Canada. My dream is to become a computer programmer, and I worked hard for my goal</p>
+        <p>I come from a joint family with two siblings. An interesting thing about me is that I have a my younger brother So, in conclusion, I'm the oldest in the family and proudly the most loved!</p>
+        <p>Thank you for visiting my page, and I hope you enjoy learning more about my journey and interests.</p>
+
+    </div>
+
+    <table>
+        <tr>
+            <th>Details</th>
+            <th>Information</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>jashan Dhiman</td>
+        </tr>
+        <tr>
+            <td>Born</td>
+            <td>23 january 2004</td>
+        </tr>
+        <tr>
+            <td>Residence</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Studying</td>
+            <td>Computer Programming</td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>Trying new foods</td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="category">Choose a category:</label>
+        <select id="category" name="category">
+            <option value="sunny">Sunny Day</option>
+            <option value="starry">Starry Night</option>
+        </select>
+
+        <!-- Additional questions -->
+        <label for="experience">How would you rate your experience on this page?</label>
+        <select id="experience" name="experience">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <button type="button" onclick="changeContent()">Submit</button>
+    </form>
+
+   
+
+</body>
+</html>
